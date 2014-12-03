@@ -1,7 +1,12 @@
 conveyor-belt
 =============
 
-Aggregated segmentation of fish from conveyor belt videos
+Aggregated segmentation of fish from conveyor belt videos.  
+
+This is the source code of aggregated segmentation algorithm of fish from conveyor belt videos. The implementation is developed in Visual C++ using OpenCV 2.4.3 library and tested on Windows 7 machines.  
+
+For details of the algorithm, please refer to the following paper.  
+M.-C. Chuang, J.-N. Hwang, C. S. Rose, "Aggregated segmentation of fish from conveyor belt video," IEEE Intl. Conf. on Acoustic, Speech and Signal Processing (ICASSP), May 2013.
 
 ### Updates
 
@@ -18,7 +23,7 @@ Apr/30/2013
 * Showing real-time the input frames and output mask images. In the input frame, each detected object are labeled by its oriented bounding box.
 * Additional command-line argument as the toggle of object meta-data displayed in output masks.
 * All object meta-data (length, aspect ratio, average color, etc.) are included in CSV file.
-* Changes in oriented bounding box method for better accuracy. A custom-developed function orientedBoundingBox(), which performs principal component analysis (PCA) on the object contour, substitutes for OpenCV method minAreaRect().
+* Changes in oriented bounding box method for better accuracy. A custom-developed function `orientedBoundingBox()`, which performs principal component analysis (PCA) on the object contour, substitutes for OpenCV method `minAreaRect()`.
 
 ### 1. Command-line interface with arguments
 When calling the executable via command-line interface, arguments are required to be provided by the user along with the command. There are 6 arguments in total, which are listed below.
@@ -36,7 +41,7 @@ Here is an example of calling the application along with arguments:
 > `conveyor_belt.exe 1 C:\data\my_video.mp4 400 -1 C:\output\out_data.csv C:\output\masks\ 0`
 
 If any of the arguments are not provided properly, the executable stops and an usage hint pops out:  
-Usage:  
+> `Usage:`  
 > `conveyor_belt.exe [video source] [input file name] [start frame #] [end frame #] [output .csv file name] [output mask directory] [showing meta-data] [showing output]`  
 `video source: 0=GoPro, 1=Other`    
 `end frame #: -1 means last frame`  
