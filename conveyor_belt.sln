@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "conveyor_belt", "conveyor_belt\conveyor_belt.vcxproj", "{6B09E169-4301-4BF8-9183-FDE34D953B2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B09E169-4301-4BF8-9183-FDE34D953B2A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B09E169-4301-4BF8-9183-FDE34D953B2A}.Debug|Win32.Build.0 = Debug|Win32
+		{6B09E169-4301-4BF8-9183-FDE34D953B2A}.Release|Win32.ActiveCfg = Release|Win32
+		{6B09E169-4301-4BF8-9183-FDE34D953B2A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
