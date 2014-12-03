@@ -53,7 +53,7 @@ fgObjs – extracted foreground objects
 Return: number of extracted objects in this frame  
 
 ### 3. Target Tracking
-`void trackTargets(const vector<FgObject>& fgObjs, bool isFirstFrame)`
+`void trackTargets(const vector<FgObject>& fgObjs, bool isFirstFrame)`  
 Parameters: fgObjs – extracted foreground objects from target segmentation  
 isFirstFrame – indicating if the current frame is the first frame being processed  
 
