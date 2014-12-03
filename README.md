@@ -46,7 +46,8 @@ Usage:
 ### 2. Target Segmentation
 
 `int extractForeground(InputArray src, OutputArray dst, vector<FgObject>& fgObjs)`  
-Parameters: src – input, the current frame  
+Parameters:  
+src – input, the current frame  
 dst – output, binary image of foreground mask  
 fgObjs – extracted foreground objects
 
@@ -54,11 +55,13 @@ Return: number of extracted objects in this frame
 
 ### 3. Target Tracking
 `void trackTargets(const vector<FgObject>& fgObjs, bool isFirstFrame)`  
-Parameters: fgObjs – extracted foreground objects from target segmentation  
+Parameters:  
+fgObjs – extracted foreground objects from target segmentation  
 isFirstFrame – indicating if the current frame is the first frame being processed  
 
 `bool makeTargetOutputs(InputArray src, OutputArray dst)`  
-Parameters: src – input, the current frame  
+Parameters:  
+src – input, the current frame  
 dst – output, an image of target segmentation generated from the frame that has the best segmentation within this target’s lifespan. The pixel values of foreground area is preserved, while the remaining region are all colored as gray. Statistical parameters of the target are put aside the foreground region.  
 
 Return: whether an output image is generated, i.e., a target exits the field of view
