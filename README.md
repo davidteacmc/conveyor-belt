@@ -7,7 +7,7 @@ Project webpage: http://allison.ee.washington.edu/mengchec/belt
 This is the source code of aggregated segmentation algorithm of fish from conveyor belt videos. The implementation is developed in Visual C++ using OpenCV 2.4.3 library and tested on Windows 7 machines.  
 
 For details of the algorithm, please refer to the following paper.  
-M.-C. Chuang, J.-N. Hwang, C. S. Rose, "Aggregated segmentation of fish from conveyor belt video," IEEE Intl. Conf. on Acoustic, Speech and Signal Processing (ICASSP), May 2013.
+M.-C. Chuang, J.-N. Hwang and C. S. Rose, "Aggregated segmentation of fish from conveyor belt video," ICASSP 2013.
 
 ### Updates
 
